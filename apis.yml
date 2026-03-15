@@ -1,0 +1,15 @@
+name: KServe
+description: A standard model inference platform on Kubernetes, built for highly scalable
+  use cases. Provides performant, standardized inference protocol across ML frameworks
+  including TensorFlow, PyTorch, scikit-learn, XGBoost, and more.
+url: https://kserve.github.io/website/
+tags:
+- Machine Learning
+- Kubernetes
+- Model Serving
+- Inference
+- MLOps
+created: '2025'
+modified: '2025'
+apis: []
+common: []
