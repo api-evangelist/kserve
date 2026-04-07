@@ -8,11 +8,11 @@ description: >-
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Machine Learning
-  - Kubernetes
-  - Model Serving
   - Inference
+  - Kubernetes
+  - Machine Learning
   - MLOps
+  - Model Serving
 url: https://raw.githubusercontent.com/api-evangelist/kserve/refs/heads/main/apis.yml
 created: '2025-01-01'
 modified: '2026-03-16'
