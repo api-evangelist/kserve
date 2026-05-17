@@ -37,9 +37,9 @@ common:
     url: https://kserve.github.io/website/
   - type: Documentation
     url: https://kserve.github.io/website/latest/
-  - type: Getting Started
+  - type: GettingStarted
     url: https://kserve.github.io/website/latest/get_started/
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/kserve/kserve
 maintainers:
   - FN: Kin Lane
