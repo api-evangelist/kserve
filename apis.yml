@@ -33,6 +33,8 @@ apis:
       - type: Reference
         url: https://kserve.github.io/website/latest/reference/api/
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/kserve-project
   - type: Website
     url: https://kserve.github.io/website/
   - type: Documentation
