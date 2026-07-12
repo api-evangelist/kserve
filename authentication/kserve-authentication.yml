@@ -1,0 +1,18 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/kserve-openapi.yml
+summary:
+  types:
+  - http
+schemes:
+- name: BearerAuth
+  type: http
+  scheme: bearer
+  description: |-
+    KServe itself does not mandate an auth scheme; in production the
+    InferenceService is typically fronted by an ingress/gateway that
+    enforces auth (for example, Istio with OIDC/JWT, Knative serving
+    with Kubernetes auth, or an API gateway). Bearer tokens are the
+    most common production pattern.
+  sources:
+  - openapi/kserve-openapi.yml

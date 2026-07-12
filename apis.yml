@@ -33,6 +33,8 @@ apis:
       - type: Reference
         url: https://kserve.github.io/website/latest/reference/api/
 common:
+  - type: Authentication
+    url: authentication/kserve-authentication.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/kserve-project
   - type: Website
@@ -43,6 +45,8 @@ common:
     url: https://kserve.github.io/website/latest/get_started/
   - type: GitHubOrganization
     url: https://github.com/kserve/kserve
+  - url: https://kserve.github.io/website/blog/atom.xml
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
