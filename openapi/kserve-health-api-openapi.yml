@@ -1,0 +1,64 @@
+openapi: 3.1.0
+info:
+  title: KServe Inference Protocol Health API
+  version: v1+v2
+  description: 'Standardized model inference HTTP protocol exposed by KServe model
+
+    servers. Endpoints below cover both the V1 Data Plane (prediction-style)
+
+    and the V2 Data Plane (Open Inference Protocol). Endpoint paths
+
+    transcribed from the public KServe documentation.
+
+    '
+  contact:
+    name: Kin Lane
+    email: kin@apievangelist.com
+    url: https://apievangelist.com
+  license:
+    name: Documentation reference only
+    url: https://kserve.github.io/website/docs/concepts/architecture/data-plane/v2-protocol
+servers:
+- url: http://{host}
+  description: KServe inference service ingress (cluster- or gateway-specific)
+  variables:
+    host:
+      default: model.example.com
+security: []
+tags:
+- name: Health
+paths:
+  /v2/health/live:
+    get:
+      summary: Server liveness (V2)
+      operationId: v2ServerLive
+      responses:
+        '200':
+          description: Server is live
+      tags:
+      - Health
+  /v2/health/ready:
+    get:
+      summary: Server readiness (V2)
+      operationId: v2ServerReady
+      responses:
+        '200':
+          description: Server is ready
+      tags:
+      - Health
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      description: 'KServe itself does not mandate an auth scheme; in production the
+
+        InferenceService is typically fronted by an ingress/gateway that
+
+        enforces auth (for example, Istio with OIDC/JWT, Knative serving
+
+        with Kubernetes auth, or an API gateway). Bearer tokens are the
+
+        most common production pattern.
+
+        '
