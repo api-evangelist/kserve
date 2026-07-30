@@ -6,7 +6,20 @@ description: >-
   across ML frameworks including TensorFlow, PyTorch, scikit-learn, XGBoost,
   and more.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/kserve.png
 tags:
   - Inference
   - Kubernetes
@@ -18,20 +31,48 @@ created: '2025-01-01'
 modified: '2026-04-28'
 specificationVersion: '0.19'
 apis:
-  - aid: kserve:inference-api
-    name: KServe Inference API
-    description: >-
-      KServe's standardized model inference protocol for serving predictions
-      across multiple ML frameworks on Kubernetes.
-    humanURL: https://kserve.github.io/website/
-    tags:
-      - Inference
-      - Model Serving
-    properties:
-      - type: Documentation
-        url: https://kserve.github.io/website/latest/get_started/
-      - type: Reference
-        url: https://kserve.github.io/website/latest/reference/api/
+- aid: kserve:inference-api
+  name: KServe Inference API
+  description: >-
+    KServe's standardized model inference protocol for serving predictions across multiple ML frameworks
+    on Kubernetes.
+  humanURL: https://kserve.github.io/website/
+  tags:
+  - Inference
+  - Model Serving
+  properties:
+  - type: Documentation
+    url: https://kserve.github.io/website/latest/get_started/
+  - type: Reference
+    url: https://kserve.github.io/website/latest/reference/api/
+- aid: kserve:kserve-health-api
+  name: KServe Health API
+  description: The Health API from KServe — 2 operation(s) for health.
+  humanURL: https://kserve.github.io/website/
+  tags:
+  - Health
+  properties:
+  - type: OpenAPI
+    url: openapi/kserve-health-api-openapi.yml
+- aid: kserve:kserve-kserve-inference-protocol-api
+  name: KServe KServe Inference Protocol API
+  description: >-
+    The KServe Inference Protocol API from KServe — 1 operation(s) for kserve inference protocol.
+  humanURL: https://kserve.github.io/website/
+  tags:
+  - KServe Inference Protocol
+  properties:
+  - type: OpenAPI
+    url: openapi/kserve-kserve-inference-protocol-api-openapi.yml
+- aid: kserve:kserve-models-api
+  name: KServe Models API
+  description: The Models API from KServe — 7 operation(s) for models.
+  humanURL: https://kserve.github.io/website/
+  tags:
+  - Models
+  properties:
+  - type: OpenAPI
+    url: openapi/kserve-models-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/kserve-agentic-access.yml
