@@ -1,0 +1,149 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "KServe Inference Protocol Health Models API",
+    "version": "v1+v2"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Models",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List models (V1)",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://{host}/v1/models"
+          },
+          "docs": "List models (V1)"
+        },
+        {
+          "info": {
+            "name": "Model ready (V1)",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://{host}/v1/models/:model_name",
+            "params": [
+              {
+                "name": "model_name",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Model ready (V1)"
+        },
+        {
+          "info": {
+            "name": "Predict (V1)",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://{host}/v1/models/:model_name:predict",
+            "params": [
+              {
+                "name": "model_name",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Predict (V1)"
+        },
+        {
+          "info": {
+            "name": "Explain (V1)",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://{host}/v1/models/:model_name:explain",
+            "params": [
+              {
+                "name": "model_name",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Explain (V1)"
+        },
+        {
+          "info": {
+            "name": "Model metadata (V2)",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://{host}/v2/models/:model_name",
+            "params": [
+              {
+                "name": "model_name",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Model metadata (V2)"
+        },
+        {
+          "info": {
+            "name": "Model readiness (V2)",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://{host}/v2/models/:model_name/ready",
+            "params": [
+              {
+                "name": "model_name",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Model readiness (V2)"
+        },
+        {
+          "info": {
+            "name": "Inference (V2 Open Inference Protocol)",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://{host}/v2/models/:model_name/infer",
+            "params": [
+              {
+                "name": "model_name",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Inference (V2 Open Inference Protocol)"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

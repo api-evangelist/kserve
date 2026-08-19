@@ -1,0 +1,40 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "KServe Inference Protocol Health API",
+    "version": "v1+v2"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Health",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Server liveness (V2)",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://{host}/v2/health/live"
+          },
+          "docs": "Server liveness (V2)"
+        },
+        {
+          "info": {
+            "name": "Server readiness (V2)",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://{host}/v2/health/ready"
+          },
+          "docs": "Server readiness (V2)"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
