@@ -23,6 +23,12 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/kserve.png
 tags:
   - Inference
   - Kubernetes
+  - Machine-Learning
+  - MLOps
+  - Model Serving
+tags_raw:
+  - Inference
+  - Kubernetes
   - Machine Learning
   - MLOps
   - Model Serving
