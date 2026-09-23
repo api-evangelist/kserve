@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Health KServe Inference Protocol API
+  title: KServe Inference Protocol API
   version: v1+v2
   description: 'Standardized model inference HTTP protocol exposed by KServe model
 
@@ -8,9 +8,7 @@ info:
 
     and the V2 Data Plane (Open Inference Protocol). Endpoint paths
 
-    transcribed from the public KServe documentation.
-
-    '
+    transcribed from the public KServe documentation.'
   contact:
     name: Kin Lane
     email: kin@apievangelist.com

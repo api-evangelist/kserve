@@ -1,9 +1,7 @@
 {
   "provider": "kserve",
   "sources": [
-    "kserve-health-api-openapi.yml",
-    "kserve-kserve-inference-protocol-api-openapi.yml",
-    "kserve-models-api-openapi.yml"
+    "_original/kserve-openapi.yml"
   ],
   "outputs": [
     "kserve-health-api-openapi.yml",
@@ -13,6 +11,27 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "kserve-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "kserve-openapi.yml: tagged paths GET /v1/models -> Models",
+    "kserve-openapi.yml: tagged paths GET /v1/models/{model_name} -> Models",
+    "kserve-openapi.yml: tagged paths POST /v1/models/{model_name}:predict -> Models",
+    "kserve-openapi.yml: tagged paths POST /v1/models/{model_name}:explain -> Models",
+    "kserve-openapi.yml: tagged paths GET /v2 -> KServe Inference Protocol",
+    "kserve-openapi.yml: tagged paths GET /v2/health/live -> Health",
+    "kserve-openapi.yml: tagged paths GET /v2/health/ready -> Health",
+    "kserve-openapi.yml: tagged paths GET /v2/models/{model_name} -> Models",
+    "kserve-openapi.yml: tagged paths GET /v2/models/{model_name}/ready -> Models",
+    "kserve-openapi.yml: tagged paths POST /v2/models/{model_name}/infer -> Models",
+    "kserve-openapi.yml: declared missing tag: Health",
+    "kserve-openapi.yml: declared missing tag: KServe Inference Protocol",
+    "kserve-openapi.yml: declared missing tag: Models",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "kserve-health-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "kserve-kserve-inference-protocol-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "kserve-models-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
