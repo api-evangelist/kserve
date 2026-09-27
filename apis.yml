@@ -32,7 +32,7 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/kserve.png
 tags:
 - Inference
 - Kubernetes
-- Machine-Learning
+- Machine Learning
 - MLOps
 - Model Serving
 tags_raw:
@@ -41,6 +41,7 @@ tags_raw:
 - Machine Learning
 - MLOps
 - Model Serving
+- Machine-Learning
 url: https://raw.githubusercontent.com/api-evangelist/kserve/refs/heads/main/apis.yml
 created: '2025-01-01'
 modified: '2026-09-16'
