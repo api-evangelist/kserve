@@ -88,6 +88,9 @@ apis:
   - type: OpenAPI
     url: openapi/kserve-models-api-openapi.yml
 common:
+- type: CapabilityMap
+  url: capabilities/kserve-capability-edges.yml
+  name: KServe Business Capability Map
 - type: AgenticAccess
   url: agentic-access/kserve-agentic-access.yml
 - type: Authentication
